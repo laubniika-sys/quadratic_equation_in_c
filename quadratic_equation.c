@@ -86,8 +86,8 @@ int main(int argc, char **argv)
 {
     if (argc != 4)
     {
-        ft_putstr("Uso correto: ./a.out <a> <b> <c>\n");
-        ft_putstr("Exemplo: ./a.out 1 -5 6\n");
+        ft_putstr("Usage: ./quadratic_solver <a> <b> <c>\n");
+        ft_putstr("Example: ./quadratic_solver 1 -5 6\n");
         return (1);
     }
 
@@ -95,7 +95,7 @@ int main(int argc, char **argv)
     double b = atof(argv[2]);
     double c = atof(argv[3]);
 
-    ft_putstr("--- Equação: ");
+    ft_putstr("--- Equation: ");
     ft_putnbr((int)a);
     ft_putstr("x^2 + ");
     ft_putnbr((int)b);
