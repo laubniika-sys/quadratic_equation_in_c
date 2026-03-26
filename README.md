@@ -1,6 +1,6 @@
 Quadratic Equation Solver (C)
 
-Simple program to solve quadratic equations using Bhaskara formula.
+Simple program to solve quadratic equations using quadratic formula (Bhaskara formula).
 
 Compile
 gcc quadratic_equation.c -lm -o quad
