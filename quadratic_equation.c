@@ -80,14 +80,30 @@ void	ft_quadratic_equation(double a, double b, double c)
 	}
 }
 
-int main(void)
+#include <stdlib.h>
+
+int main(int argc, char **argv)
 {
-	ft_putstr("--- x^2 - 5x + 6 = 0 ---\n");
-	ft_quadratic_equation(1, -5, 6);
-	return (0);
+    if (argc != 4)
+    {
+        ft_putstr("Uso correto: ./a.out <a> <b> <c>\n");
+        ft_putstr("Exemplo: ./a.out 1 -5 6\n");
+        return (1);
+    }
+
+    double a = atof(argv[1]);
+    double b = atof(argv[2]);
+    double c = atof(argv[3]);
+
+    ft_putstr("--- Equação: ");
+    ft_putnbr((int)a);
+    ft_putstr("x^2 + ");
+    ft_putnbr((int)b);
+    ft_putstr("x + ");
+    ft_putnbr((int)c);
+    ft_putstr(" = 0 ---\n");
+
+    ft_quadratic_equation(a, b, c);
+
+    return (0);
 }
-
-
-
-
-
